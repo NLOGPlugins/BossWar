@@ -5,6 +5,10 @@
 # BossWar
 > 보스전 플러그인
 
+## 필수 플러그인
+<a href=https://github.com/LeinneSW/PureEntities>PureEntities</a>로 AI 구현
+* [ ] PureEntities 없이 AI 구현
+
 ## 사용법
 * [x] /보스스폰 - 보스스폰위치 설정
 * [ ] /보스입장 - 보스전 입장
