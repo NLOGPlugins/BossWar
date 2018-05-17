@@ -215,6 +215,7 @@ class BossEntity extends Zombie {
             }
         }
         arsort($all);
+	$all = array_keys($all);
         if (empty($all)) {
             parent::onDeath();
             return;
