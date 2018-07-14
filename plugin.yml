@@ -1,7 +1,9 @@
 ---
 name: BossWar
 version: "1.0"
-api: 3.0.0-ALPHA12
+api: 
+- 3.0.7
+- 4.0.0
 author: nlog
 main: nlog\BossWar\BossWar
 depend: PureEntities
