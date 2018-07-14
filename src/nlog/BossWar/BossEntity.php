@@ -250,7 +250,7 @@ class BossEntity extends Zombie {
 
         Server::getInstance()->broadcastMessage(BossWar::$prefix . "보스가 §a처치§f되었습니다!");
         Server::getInstance()->broadcastMessage(BossWar::$prefix . "20분 뒤 보스가 소환됩니다!");
-        Server::getInstance()->getScheduler()->scheduleDelayedTask(new BossSpawnTask(BossWar::getInstance(), BossSpawnTask::STEP_3), 20 * 60 * 10);
+        BossWar::getInstance()->getScheduler()->scheduleDelayedTask(new BossSpawnTask(BossWar::getInstance(), BossSpawnTask::STEP_3), 20 * 60 * 10);
         parent::onDeath();
     }
 
