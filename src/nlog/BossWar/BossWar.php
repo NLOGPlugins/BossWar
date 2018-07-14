@@ -80,7 +80,7 @@ class BossWar extends PluginBase implements Listener {
         }
         $this->BossSpawn = new Position((float) $e[0], (float) $e[1], (float) $e[2], $this->getServer()->getLevelByName($e[3]));
 
-        $this->getServer()->getScheduler()->scheduleDelayedTask(new BossSpawnTask($this, BossSpawnTask::STEP_2), 20 * 60 * 5);
+        $this->getScheduler()->scheduleDelayedTask(new BossSpawnTask($this, BossSpawnTask::STEP_2), 20 * 60 * 5);
         $this->getServer()->broadcastMessage(self::$prefix . "10분 뒤 보스가 소환됩니다!");
 
         $this->getServer()->getCommandMap()->register('boss', new SelectBossSpawnCommand($this));
